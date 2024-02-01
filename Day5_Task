@@ -1,0 +1,151 @@
+1. Create your own resume in JSON format
+=====================================================================================================
+{
+  "name": "Reshma Ramamurthi Pillai",
+  "contact": {
+    "email": "mailtoreshu.rr@gmail.com",
+    "phone": "+91 8015049324",
+    "address": "Chennai, Tamilnadu, India"
+  },
+  "summary": "Experienced IT professional with 6 years experience in various technologies that includes Full Stack Developement, ETL, Business Intelligence and JDA.",
+  "skills": [
+    "JavaScript (ES6+)",
+    "HTML5",
+    "CSS3",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "RESTful APIs",
+    "Git",
+    "Responsive Web Design",
+    "Agile Development",
+    "Informatica",
+    "SQL",
+    "UNIX"
+  ],
+  "experience": [
+    {
+      "position": "Senior System Analyst",
+      "company": "Tata Consultancy Services",
+      "location": "Chennai, Tamilnadu",
+      "startDate": "August 2021",
+      "endDate": "Present",
+      "responsibilities": [
+"Administered Informatica Cloud and On-premise systems, configuring and troubleshooting to maintain high availability",
+"Led a team of 14 members, auditing performance and fostering self-improvement, resulting in enhanced team productivity",
+"Managed incidents and requests using ServiceNow, maintaining a high level of customer satisfaction",
+"Coordinated with cross-functional teams (Network, Server Administrators, Informatica Global Support) to drive problem resolution, ensuring timely issue resolution",
+"Oversaw the administration of IICS and Informatica PowerCenter, optimizing user data management and ensuring data security",
+"Actively monitored system performance across various environments, identifying and addressing performance bottlenecks",
+"Managed disk space and load balance, ensuring optimal system performance",
+"Conducted detailed analysis of client-provided specifications, ensuring accurate implementation of requirements"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Computer Science",
+      "school": "Saveetha Engineering College",
+      "location": "Chennai, Tamilnadu",
+      "graduationDate": "May 2017"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Ceritified Business Analysis Professional",
+      "organization": "Human Resource Development",
+      "date": "January 2024"
+    }
+  ],
+  "languages": ["English"],
+  "interests": ["Open Source Projects", "Continuous Learning", "Singing"]
+}
+
+
+2. For the above JSON, iterate over all for loops(for , for in, for of, for each)
+==================================================================================
+
+var resume = {
+  "name": "Reshma Ramamurthi Pillai",
+  "contact": {
+    "email": "mailtoreshu.rr@gmail.com",
+    "phone": "+91 8015049324",
+    "address": "Chennai, Tamilnadu, India"
+  },
+  "summary": "Experienced IT professional with 6 years experience in various technologies that includes Full Stack Developement, ETL, Business Intelligence and JDA.",
+  "skills": [
+    "JavaScript (ES6+)",
+    "HTML5",
+    "CSS3",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "RESTful APIs",
+    "Git",
+    "Responsive Web Design",
+    "Agile Development",
+    "Informatica",
+    "SQL",
+    "UNIX"
+  ],
+  "experience": [
+    {
+      "position": "Senior System Analyst",
+      "company": "Tata Consultancy Services",
+      "location": "Chennai, Tamilnadu",
+      "startDate": "August 2021",
+      "endDate": "Present",
+      "responsibilities": [
+"Administered Informatica Cloud and On-premise systems, configuring and troubleshooting to maintain high availability",
+"Led a team of 14 members, auditing performance and fostering self-improvement, resulting in enhanced team productivity",
+"Managed incidents and requests using ServiceNow, maintaining a high level of customer satisfaction",
+"Coordinated with cross-functional teams (Network, Server Administrators, Informatica Global Support) to drive problem resolution, ensuring timely issue resolution",
+"Oversaw the administration of IICS and Informatica PowerCenter, optimizing user data management and ensuring data security",
+"Actively monitored system performance across various environments, identifying and addressing performance bottlenecks",
+"Managed disk space and load balance, ensuring optimal system performance",
+"Conducted detailed analysis of client-provided specifications, ensuring accurate implementation of requirements"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Computer Science",
+      "school": "Saveetha Engineering College",
+      "location": "Chennai, Tamilnadu",
+      "graduationDate": "May 2017"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Ceritified Business Analysis Professional",
+      "organization": "Human Resource Development",
+      "date": "January 2024"
+    }
+  ],
+  "languages": ["English"],
+  "interests": ["Open Source Projects", "Continuous Learning", "Singing"]
+};
+
+//for
+for(var i =0;i < resume.skills.length; i++)
+{
+  console.log(resume.skills[i])
+}
+
+//for in 
+for(var i in resume.skills)
+{
+  console.log(resume.skills[i])
+}
+
+//for of
+for(var i of resume.skills)
+{
+  console.log(i)
+}
+
+//for each
+resume.skills.forEach(i =>
+{
+  console.log(i);
+});
